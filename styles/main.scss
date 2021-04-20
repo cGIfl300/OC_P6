@@ -1,0 +1,14 @@
+@import 'base/mixins', 'vendors/gist';
+
+body {
+  color: red;
+  background: blue;
+}
+
+h {
+  @for $i from 1 through 6 {
+    &#{$i} {
+      @include headers();
+    }
+  }
+}
