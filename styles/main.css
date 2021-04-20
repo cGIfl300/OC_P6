@@ -1,27 +1,40 @@
 .gist-meta {
-  display: none; }
+    display: none;
+}
 
 body {
-  color: red;
-  background: blue; }
+    color: red;
+    background: blue;
+}
 
 h1 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
+
 h2 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
+
 h3 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
+
 h4 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
+
 h5 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
+
 h6 {
-  color: greenyellow;
-  border: 5px greenyellow solid; }
+    color: greenyellow;
+    border: 5px greenyellow solid;
+}
 
 /*# sourceMappingURL=main.css.map */

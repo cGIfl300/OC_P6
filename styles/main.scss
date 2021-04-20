@@ -1,9 +1,7 @@
-@import 'base/mixins', 'vendors/gist';
-
-body {
-  color: red;
-  background: blue;
-}
+@import 'base/global';
+@import 'base/mixins';
+@import 'vendors/gist';
+@import 'layout/main';
 
 h {
   @for $i from 1 through 6 {
