@@ -2,11 +2,4 @@
 @import 'base/mixins';
 @import 'vendors/gist';
 @import 'layout/main';
-
-h {
-  @for $i from 1 through 6 {
-    &#{$i} {
-      @include headers();
-    }
-  }
-}
+@import 'layout/_carousel.scss';
