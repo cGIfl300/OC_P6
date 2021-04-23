@@ -1,9 +1,11 @@
 $app-name: 'JustStreamIt';
 
 // Theme colors
-$color-foreground: green;
-$color-background: pink;
+$color-foreground: white;
+$color-background: black;
 
 // For carousels
-$table-border-color: red;
+$table-border-color: white;
+$table-border-on-over: red;
 $table-border-width: 5px;
+$table-zoom: 120%;
