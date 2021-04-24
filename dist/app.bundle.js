@@ -1,1 +1,1 @@
-(()=>{"use strict";window.onload=function(){!function(){for(var t=document.getElementsByTagName("*"),e=0;e<t.length;e++){var n=t[e],o=n.getAttribute("carousel");null!==o&&(n.innerHTML="Bingpot! - "+o)}}()},document.title="JustStreamIt"})();
+(()=>{"use strict";(new Map).set("best","url to best movies"),window.onload=function(){!function(){for(var t=document.getElementsByTagName("*"),e=0;e<t.length;e++){var n=t[e],o=n.getAttribute("carousel");null!==o&&(n.innerHTML="Bingpot! - "+o)}}()},document.title="JustStreamIt"})();
