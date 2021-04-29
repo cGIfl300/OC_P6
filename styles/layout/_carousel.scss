@@ -1,9 +1,11 @@
-carousel {
-  table {
-    width: 100%;
+#carousel {
+  box-sizing: border-box;
 
-    th {
-      border: solid $table-border-width $table-border-color;
+  mySlide {
+    @for $slideNumber from 1 to $totalSlides {
+    &#{$slideNumber} {
+      display: $carousels-default-display;
     }
+  }
   }
 }

@@ -5,7 +5,5 @@ $color-foreground: white;
 $color-background: black;
 
 // For carousels
-$table-border-color: white;
-$table-border-on-over: red;
-$table-border-width: 5px;
-$table-zoom: 120%;
+$carousels-default-display: none;
+$totalSlides: 4; // Total number of slides to control
