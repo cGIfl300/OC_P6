@@ -1,20 +1,26 @@
-import {slideId, slideIndex} from "../variables/variables";
+import {numberOfShownElements, slideId, slideIndex} from "../variables/variables";
 
 export function showSlides(n, no) {
-    let i;
-    let x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {
-        slideIndex[no] = 1
+    let element;
+    let selectedSlide = document.getElementsByClassName(slideId[no]);
+    let countdown = numberOfShownElements;
+
+    if (slideIndex[no] > (selectedSlide.length - numberOfShownElements)) {
+        slideIndex[no] = selectedSlide.length - numberOfShownElements
     }
-    if (n < 1) {
-        slideIndex[no] = x.length
+    if (slideIndex[no] < 0) {
+        slideIndex[no] = 0
     }
 
-    // Alternative
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    // Hide every element
+    for (element = 0; element < selectedSlide.length; element++) {
+        selectedSlide[element].style.display = "none";
     }
-    // Code HERE - Number of elements of the slide to be shown...
-    x[slideIndex[no] - 1].style.display = "block";
-    x[slideIndex[no]].style.display = "block";
+    // Show the current selection
+    for (element = slideIndex[no]; element < selectedSlide.length; element += 1) {
+        if (countdown > 0) {
+            selectedSlide[element].style.display = "block";
+            countdown--;
+        }
+    }
 }
