@@ -1,12 +1,15 @@
 import {numberOfShownElements, slideId, slideIndex} from "../variables/variables";
 
 export function showSlides(n, no) {
+    // Hide and show elements from the slide
+
     let element;
     let selectedSlide = document.getElementsByClassName(slideId[no]);
     let countdown = numberOfShownElements;
+    let maxCursor = selectedSlide.length - numberOfShownElements;
 
-    if (slideIndex[no] > (selectedSlide.length - numberOfShownElements)) {
-        slideIndex[no] = selectedSlide.length - numberOfShownElements
+    if (slideIndex[no] > maxCursor) {
+        slideIndex[no] = maxCursor
     }
     if (slideIndex[no] < 0) {
         slideIndex[no] = 0
