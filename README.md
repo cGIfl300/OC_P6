@@ -8,9 +8,9 @@ Or clone it using git `git clone https://github.com/cGIfl300/OC_P6`.
 
 ## Build the project
 
-`npm run build`  
+`npm run build`
 
-## Installing the project  
+## Installing the project
 
 Copy index.html and the dist/ directory at the root of your webserver.  
 This version is for testing purposes only and use localhost as REST API provider.  

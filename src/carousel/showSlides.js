@@ -19,6 +19,7 @@ export function showSlides(n, no) {
     for (element = 0; element < selectedSlide.length; element++) {
         selectedSlide[element].style.display = "none";
     }
+
     // Show the current selection
     for (element = slideIndex[no]; element < selectedSlide.length; element += 1) {
         if (countdown > 0) {
