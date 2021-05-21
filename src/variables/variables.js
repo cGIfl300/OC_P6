@@ -14,3 +14,6 @@ export let numberOfShownElements = 4;
 export let maximumMovies = 7; // maximum number of movies to retrieve
 export let movies = Array();
 export let actualPage = 1;
+
+// To remember every movies of every slides
+export let everyMovies = new Map;

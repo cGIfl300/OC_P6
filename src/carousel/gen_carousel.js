@@ -4,6 +4,9 @@ import {
 import {
   getMovies
 } from "../requests/get_movies";
+import {
+  everyMovies
+} from "../variables/variables.js";
 
 export function gen_carousel(element, slideNumber, carouselType) {
 
@@ -22,10 +25,11 @@ export function gen_carousel(element, slideNumber, carouselType) {
   myMovies = getMovies(carouselType, 10);
   for (let el = 0; el < myMovies.length; el++) {
     content += `<th>
-              <div class="mySlides${slideNumber}">
+              <div class="mySlides${slideNumber}" id="${"movie"+slideNumber+"_"+el}">
                   <img src="${myMovies[el].image_url}">
               </div>
           </th>`;
+    everyMovies.set("movie" + slideNumber + "_" + el, myMovies[el]);
   }
   // End of loop
 
@@ -51,4 +55,13 @@ export function gen_carousel(element, slideNumber, carouselType) {
     event.stopPropagation();
     plusSlides(-1, slideNumber);
   });
+
+  // The following is to do after getting all carousels ready, see the global Map everyMovies
+  // Bind on each movies
+  // selectedElement = document.getElementById("movie" + slideNumber + "_" + el);
+  // selectedElement.addEventListener('click', function(event) {
+  //   event.stopPropagation();
+  //   alert("Talalala sur " + "movie" + slideNumber + "_" + el);
+  // });
+
 }

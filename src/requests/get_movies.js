@@ -7,12 +7,10 @@ import {
 } from "../variables/variables";
 
 export function getMovies(requestedFilter = "best", numberOfMovies) {
-  // START DEBUG - We need to use a worker...
   movies = Array();
   requestDB(requestedFilter, numberOfMovies);
   actualPage = 1;
   return movies;
-  // END DEBUG
 }
 
 function requestDB(requestedFilter, numberOfMovies) {
@@ -50,16 +48,8 @@ function stockMovies(rawStock, numberOfMovies, requestedFilter) {
     (element < rawStock.results.length) &&
     (movies.length < maximumMovies) &&
     (movies.length < numberOfMovies); element++) {
-    // DEBUG
-    console.log("Page (" + actualPage + ") Adding " +
-      rawStock.results[element].title +
-      " at " + rawStock.results[element].imdb_url);
-    // END DEBUG
     movies = movies.concat(rawStock.results[element]);
   }
-  // DEBUG
-  console.log("(page " + (actualPage) + ") Nous avons actuellement " + movies.length + " films.");
-  // END DEBUG
 
   if (movies.length === maximumMovies || movies.length === numberOfMovies) {
     actualPage = 0;

@@ -17,12 +17,11 @@ export function carousel() {
     let selectedElement = bloc[index];
     let carouselType = selectedElement.getAttribute("carousel");
     if (carouselType !== null) {
-      //getMovies(selectedElement, carouselType);
       gen_carousel(selectedElement, slideNumber, carouselType);
       slideNumber += 1;
     }
   }
-  // Show initial carousels
+  // Show and hide initial carousels
   for (let index = 0; index < 10; index++) {
     showSlides(1, index);
   }

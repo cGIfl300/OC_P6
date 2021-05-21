@@ -1,3 +1,4 @@
-import {start} from "./start/start";
-
+import {
+  start
+} from "./start/start";
 start();
