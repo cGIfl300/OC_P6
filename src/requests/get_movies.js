@@ -1,6 +1,5 @@
 import {
   maximumMovies,
-  serverURL,
   typeOfMovies,
   movies,
   actualPage
