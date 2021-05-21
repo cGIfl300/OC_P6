@@ -1,53 +1,29 @@
-#carousel {
+.carousel {
   box-sizing: border-box;
 
   mySlide {
     @for $slideNumber from 1 to $totalSlides {
       &#{$slideNumber} {
         display: $carousels-default-display;
+        }
       }
     }
-  }
-
-  img {
-    vertical-align: middle;
   }
 
   .slideshow-container {
     position: relative;
     margin: auto;
-  }
+    img {
+      vertical-align: middle;
+      width: 100%;
+      border: 5px none red;
+      &:hover {
+        @include image-over;
+      }
+    }
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    table {
+      display: flex;
+      flex-direction: row;
+    }
   }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a grey background color */
-  .prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
-
-  table {
-    display: flex;
-    flex-direction: row;
-  }
-}

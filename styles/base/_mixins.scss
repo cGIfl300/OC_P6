@@ -1,3 +1,8 @@
 @mixin carousel-slide() {
   display: none;
 }
+
+@mixin image-over {
+  border-style: solid;
+  transform: scale(105%, 105%);
+}

@@ -1,45 +1,48 @@
-import {plusSlides} from "./plusSlides";
+import {
+  plusSlides
+} from "./plusSlides";
+import {
+  getMovies
+} from "../requests/get_movies";
 
-export function gen_carousel(element, slideNumber) {
-    let nextTrigger = "next" + slideNumber;
-    let prevTrigger = "prev" + slideNumber;
-    element.innerHTML += `
-    <p>Slideshow ${slideNumber}:</p>
+export function gen_carousel(element, slideNumber, carouselType) {
+  let nextTrigger = "next" + slideNumber;
+  let prevTrigger = "prev" + slideNumber;
+  let myMovies = "";
+  let content = `
+    <p>Slideshow ${carouselType}:</p>
 <div class="slideshow-container">
     <table>
         <th>
             <a class="prev" id="prev${slideNumber}">&#10094;</a>
-        </th>
-        <th>
-            <div class="mySlides${slideNumber}">
-                <img src="https://zupimages.net/up/21/16/6bxn.jpg" style="width:100%; max-height:200px">
-            </div>
-        </th>
-        <th>
-            <div class="mySlides${slideNumber}">
-                <img src="https://zupimages.net/up/21/16/gxj9.jpg" style="width:100%; max-height:200px">
-            </div>
-        </th>
-        <th>
-            <div class="mySlides${slideNumber}">
-                <img src="https://zupimages.net/up/21/16/cht0.jpg" style="width:100%; max-height:200px">
-            </div>
-        </th>
+        </th>`;
+  // Here is the loop
+  myMovies = getMovies(carouselType, 10);
+  for (let el = 0; el < myMovies.length; el++) {
+    content += `<th>
+              <div class="mySlides${slideNumber}">
+                  <img src="${myMovies[el].image_url}">
+              </div>
+          </th>`;
+  }
+  // End of Hell
+  content += `
         <th>
             <a class="next" id="next${slideNumber}">&#10095;</a>
         </th>
     </table>
 </div>
     `;
-    let nextElement = document.getElementById(nextTrigger);
-    nextElement.addEventListener('click', function (event) {
-        event.stopPropagation();
-        plusSlides(1, slideNumber);
-    });
+  element.innerHTML += content;
+  let nextElement = document.getElementById(nextTrigger);
+  nextElement.addEventListener('click', function(event) {
+    event.stopPropagation();
+    plusSlides(1, slideNumber);
+  });
 
-    let previousElement = document.getElementById(prevTrigger);
-    previousElement.addEventListener('click', function (event) {
-        event.stopPropagation();
-        plusSlides(-1, slideNumber);
-    });
+  let previousElement = document.getElementById(prevTrigger);
+  previousElement.addEventListener('click', function(event) {
+    event.stopPropagation();
+    plusSlides(-1, slideNumber);
+  });
 }
