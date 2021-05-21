@@ -15,4 +15,14 @@ Or clone it using git `git clone https://github.com/cGIfl300/OC_P6`.
 Copy index.html and the dist/ directory at the root of your webserver.  
 This version is for testing purposes only and use localhost as REST API provider.  
 You will need to have the REST API server running at localhost. See
-[OCMovies API](https://github.com/cGIfl300/OC_P6/cloned_api_server/OCMovies-API-EN-FR) for further details. 
+[OCMovies API](https://github.com/cGIfl300/OC_P6/cloned_api_server/OCMovies-API-EN-FR) for further details.
+
+## How to add a slide?
+
+Add the tags to the **index.html** file were you want the carousel to be.
+
+```HTML
+<div carousel="best"></div>
+```
+
+Where _best_ can be replaced by the category you want to show.
