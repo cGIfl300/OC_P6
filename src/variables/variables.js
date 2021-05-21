@@ -11,6 +11,6 @@ typeOfMovies.set("adventure", "http://localhost:8000/api/v1/titles/?format=json&
 export let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 export const slideId = ["mySlides0", "mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8"];
 export let numberOfShownElements = 4;
-export let maximumMovies = 10; // maximum number of movies to retrieve
+export let maximumMovies = 7; // maximum number of movies to retrieve
 export let movies = Array();
 export let actualPage = 1;
