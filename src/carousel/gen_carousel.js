@@ -12,7 +12,7 @@ export function gen_carousel(element, slideNumber, carouselType) {
   let myMovies = "";
 
   let content = `
-    <p>Slideshow ${carouselType}:</p>
+    <p>${carouselType} movies</p>
 <div class="slideshow-container">
     <table>
         <th>
