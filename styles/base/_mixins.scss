@@ -6,3 +6,8 @@
   border-style: solid;
   transform: scale(105%, 105%);
 }
+
+
+@mixin border-topmovie {
+  border: solid 1px red;
+}
