@@ -56,12 +56,4 @@ export function gen_carousel(element, slideNumber, carouselType) {
     plusSlides(-1, slideNumber);
   });
 
-  // The following is to do after getting all carousels ready, see the global Map everyMovies
-  // Bind on each movies
-  // selectedElement = document.getElementById("movie" + slideNumber + "_" + el);
-  // selectedElement.addEventListener('click', function(event) {
-  //   event.stopPropagation();
-  //   alert("Talalala sur " + "movie" + slideNumber + "_" + el);
-  // });
-
 }

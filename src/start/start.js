@@ -10,5 +10,6 @@ export function start() {
 }
 
 window.onload = function() {
+  // Generate the carousels
   carousel();
 }

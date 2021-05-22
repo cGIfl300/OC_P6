@@ -10,6 +10,10 @@ import {
   showSlides
 } from "./showSlides";
 
+import {
+  bindThemAll
+} from "./bindMovies.js";
+
 export function carousel() {
   let slideNumber = 0
   let bloc = document.getElementsByTagName("*");
@@ -25,4 +29,5 @@ export function carousel() {
   for (let index = 0; index < 10; index++) {
     showSlides(1, index);
   }
+  bindThemAll();
 }
