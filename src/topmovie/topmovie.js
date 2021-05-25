@@ -8,9 +8,14 @@ export function topMovie(movie) {
     <tr>
       <td width="200px" height="230px">${movie.title}
       </td>
-      <td rowspan="2">
+      <td rowspan="3">
         <img src="${movie.image_url}">
       </td>
+    </tr>
+    <tr>
+    <td>
+    Here is the film resume.
+    </td>
     </tr>
     <tr>
       <td class="playbutton">
