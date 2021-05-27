@@ -1,15 +1,18 @@
 .topmovie {
   color: red;
   @include border-topmovie;
+
   .playbutton {
     border-radius: 15px;
     border: 2px red solid;
     font-size: 25px;
+
     &:hover {
       background-color: red;
       color: black;
     }
   }
+
   table {
     text-align: center;
   }

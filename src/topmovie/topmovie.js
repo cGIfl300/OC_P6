@@ -1,9 +1,9 @@
 export function topMovie(movie) {
-  // Function to print the top movie
+    // Function to print the top movie
 
-  let target = document.getElementById("topmovie");
+    let target = document.getElementById("topmovie");
 
-  target.innerHTML = `
+    target.innerHTML = `
   <table>
     <tr>
       <td width="200px" height="230px">${movie.title}
