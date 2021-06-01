@@ -1,6 +1,8 @@
+import {scrapData} from "../requests/scrapData";
+
 export function topMovie(movie) {
     // Function to print the top movie
-
+    scrapData(movie);
     let target = document.getElementById("topmovie");
 
     target.innerHTML = `
@@ -14,7 +16,7 @@ export function topMovie(movie) {
     </tr>
     <tr>
     <td>
-    Here is the film resume.
+    ${movie.summary}
     </td>
     </tr>
     <tr>

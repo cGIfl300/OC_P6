@@ -1,5 +1,5 @@
 import {plusSlides} from "./plusSlides";
-import {getMovies} from "../requests/get_movies";
+import {getMovies} from "../requests/getMovies";
 import {everyMovies} from "../variables/variables.js";
 
 export function gen_carousel(element, slideNumber, carouselType) {

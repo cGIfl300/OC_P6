@@ -1,8 +1,10 @@
+import {scrapData} from "../requests/scrapData";
+
 export function modalShow(movie) {
     let everyGenre = "";
     let directors = "";
     let actors = "";
-
+    scrapData(movie);
     // Get the modal
     let modal = document.getElementById("myModal");
     // Get the <span> element that closes the modal
@@ -28,7 +30,7 @@ export function modalShow(movie) {
         actors = actors + el + " ";
     }
 
-    document.getElementById("modalText").innerHTML = `
+    document.getElementsByClassName("modalText")[0].innerHTML = `
 <p>L’image de la pochette du film</p>
 <img src="${movie.image_url}">
 <p>Le Titre du film : ${movie.title}</p>
@@ -38,9 +40,9 @@ export function modalShow(movie) {
 <p>Son score Imdb : ${movie.imdb_score}</p>
 <p>Son réalisateur : ${directors}</p>
 <p>La liste des acteurs : ${actors}</p>
-<p>Sa durée</p>
-<p>Le pays d’origine</p>
-<p>Le résultat au Box Office</p>
-<p>Le résumé du film</p>
+<p>Sa durée : ${movie.duration}</p>
+<p>Le pays d’origine : ${movie.country}</p>
+<p>Le résultat au Box Office: ${movie.boffice}</p>
+<p>Le résumé du film: ${movie.long_summary}</p>
   `
 }

@@ -11,19 +11,28 @@
 </head>
 
 <body>
-<!-- The Modal -->
-<div class="modal" id="myModal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p id="modalText">Some text in the Modal..</p>
-    </div>
-
+<!-- Here is the menu -->
+<div id="wrap">
+    <ul class="navbar">
+        <li>
+            <a href="#">JustStreamIT!</a>
+        </li>
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#">Categories</a>
+            <ul>
+                <li><a href="#best">Best movies</a></li>
+                <li><a href="#adult">Adults</a></li>
+                <li><a href="#adventure">Adventure</a></li>
+                <li><a href="#action">Action</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
-<h1>JustStreamIt!</h1>
-<section id="menu"></section>
+<span id="home"></span>
 <div class="topmovie" id="topmovie">
     <table>
         <tr>
@@ -40,9 +49,24 @@
     </table>
 </div>
 
+<!-- The Modal -->
+<div class="modal" id="myModal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="modalText">Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<span id="best"></span>
 <div carousel="best"></div>
+<span id="adult"></span>
 <div carousel="adult"></div>
+<span id="adventure"></span>
 <div carousel="adventure"></div>
+<span id="action"></span>
 <div carousel="action"></div>
 
 </body>

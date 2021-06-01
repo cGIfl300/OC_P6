@@ -31,7 +31,7 @@ export function bindThemAll() {
             modalShow(this.movie);
         }
 
-        // Contaxt Capture for the modal
+        // Context Capture for the modal
         modalWindow = modalWindow.bind({
             movie: movie[1]
         });

@@ -1,5 +1,6 @@
 /* The Modal (background) */
 .modal {
+  color: $modal--text;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -14,7 +15,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: $modal--background;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -23,7 +24,7 @@
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: $modal--close-color;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -31,7 +32,7 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: $modal--close-over;
   text-decoration: none;
   cursor: pointer;
 } 

@@ -1,7 +1,7 @@
-import {appName} from "../variables/variables";
+import {appName, movies} from "../variables/variables";
 import {carousel} from "../carousel/carousel";
 
-import {getSummary} from "../requests/get_summary"
+import {scrapData} from "../requests/scrapData"
 
 export function start() {
     document.title = appName;
@@ -14,8 +14,4 @@ window.onload = function () {
     modal.style.display = "none";
     // Generate the carousels
     carousel();
-    // BUG
-    getSummary("https://www.imdb.com/title/tt1508669/");
-    console.log(getSummary("https://www.imdb.com/title/tt1508669/"));
-    // END OF BUG
 }
