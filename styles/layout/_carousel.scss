@@ -1,0 +1,31 @@
+.carousel {
+  box-sizing: border-box;
+
+  mySlide {
+    @for $slideNumber from 1 to $totalSlides {
+      &#{$slideNumber} {
+        display: $carousels-default-display;
+      }
+    }
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+
+  img {
+    vertical-align: middle;
+    width: 100%;
+    border: 5px none red;
+
+    &:hover {
+      @include image-over;
+    }
+  }
+
+  table {
+    display: flex;
+    flex-direction: row;
+  }
+}

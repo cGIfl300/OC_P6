@@ -1,0 +1,22 @@
+$app-name: 'JustStreamIt';
+
+// Theme colors
+$color-foreground: white;
+$color-background: black;
+
+// For carousels
+$carousels-default-display: none;
+$totalSlides: 9; // Total number of slides to control max = 9, this option is just to reduce the size of CSS file
+
+// Modal Window
+$modal--background: black;
+$modal--text: red;
+$modal--close-over: white;
+$modal--close-color: red;
+
+// Navbar
+$navbar--background: black;
+$navbar--text: white;
+$navbar--text-over: white;
+$navbar--background-over: red;
+$navbar--border-top: #c9d4d8;

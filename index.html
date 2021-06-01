@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="dist/img/1F3A5_black.png" rel="icon" type="image/png"/>
+    <script src="dist/polyfill.bundle.js"></script>
+    <script src="dist/app.bundle.js"></script>
+    <link href="dist/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Here is the menu -->
+<div id="wrap">
+    <ul class="navbar">
+        <li>
+            <a href="#">JustStreamIT!</a>
+        </li>
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#">Categories</a>
+            <ul>
+                <li><a href="#best">Best movies</a></li>
+                <li><a href="#adult">Adults</a></li>
+                <li><a href="#adventure">Adventure</a></li>
+                <li><a href="#action">Action</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<span id="home"></span>
+<div class="topmovie" id="topmovie">
+    <table>
+        <tr>
+            <td>Titre
+            </td>
+            <td rowspan="2">
+                Movie
+            </td>
+        </tr>
+        <tr>
+            <td class="playbutton">Play
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="modalText">Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<span id="best"></span>
+<div carousel="best"></div>
+<span id="adult"></span>
+<div carousel="adult"></div>
+<span id="adventure"></span>
+<div carousel="adventure"></div>
+<span id="action"></span>
+<div carousel="action"></div>
+
+</body>
+
+</html>

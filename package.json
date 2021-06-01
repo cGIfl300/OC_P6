@@ -1,0 +1,33 @@
+{
+  "name": "OCP6_JustStreamIt",
+  "version": "1.0.0",
+  "description": "Développez une interface utilisateur pour une application web Python",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run webpack && npm run sass && npm run prefix",
+    "webpack": "webpack",
+    "sass": "sass ./styles/main.scss:./dist/css/styles.css --style compressed",
+    "prefix": "postcss ./dist/css/styles.css --use autoprefixer -d ./dist/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.cgifl300.com/cgifl300/OC_P6"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
