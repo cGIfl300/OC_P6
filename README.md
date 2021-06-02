@@ -1,5 +1,8 @@
 # OC_P6 - Create a Web User Interface using Python
 
+![desktop](img/showcase_desktop.png)  
+![mobile](img/showcase_mobil.png)  
+
 ## Clone the project
 
 To clone this project, you can [download it on github](https://github.com/cGIfl300/OC_P6/archive/refs/heads/master.zip)
